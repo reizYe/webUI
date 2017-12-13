@@ -1,0 +1,45 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import { routerMode } from '@/config/env'
+Vue.use(Router)
+
+const HelloWorld = r => require.ensure([], () => r(require('@/components/HelloWorld')), 'HelloWorld')
+
+const main = r => require.ensure([], () => r(require('@/template/main')), 'main') // 主体页面结构
+
+const index = r => require.ensure([], () => r(require('@/template/page/index')), 'index')
+
+export default new Router({
+  mode: routerMode,
+  strict: process.env.NODE_ENV !== 'production',
+  routes: [
+    {
+      path: '/index',
+      name: 'main',
+      component: main,
+      children: [
+        {
+          path: '/index',
+          name: 'index',
+          component: index
+        },
+        {
+          path: '/hello',
+          name: 'HelloWorld',
+          component: HelloWorld
+        }
+      ]
+    },
+    {
+      path: '/',
+      name: 'HelloWorld',
+      redirect: '/login',
+      component: HelloWorld
+    },
+    {
+      path: '/login',
+      name: 'HelloWorld',
+      component: HelloWorld
+    }
+  ]
+})

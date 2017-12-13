@@ -1,0 +1,18 @@
+$commonColor:#fff !default;                /* 默认布局中颜色 */
+$backgroundHeader:#3c8dbc !default;        /* header背景颜色 */
+$userMsgIcon:#000 !default;                /* header 中icon的颜色  */
+$menuHover:#00A6C0 !default;               /* 菜单hover颜色  */
+$menuBackground:#545c64 !default;          /* 菜单背景颜色 */
+$menuHeaderBackground:#1a2226 !default;    /* 菜单标题导航颜色 */
+$menuHeaderFont:#4b646f !default;          /* 菜单标题文字颜色  */
+$breadcrumbBackground:#ecf0f5 !default;    /* 面包屑背景颜色 */
+
+/* 进度条颜色 */
+.app-main-container #nprogress .bar{
+    background-color:#000;
+}
+.app-main-container #nprogress .spinner-icon{
+    border-top-color: #000;
+    border-left-color: #000;
+}
+/* 进度条颜色 */

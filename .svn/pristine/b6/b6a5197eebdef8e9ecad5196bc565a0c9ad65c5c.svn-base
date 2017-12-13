@@ -1,0 +1,102 @@
+@import '../style/mixin';
+
+/* 菜单配置 */
+.bc-menu-continer{
+    overflow: auto;
+    &.bc-menu-continer-uncollapse{
+        overflow:unset;
+    }
+	.bc-menu-title{
+		.bc-nav-title{
+		/* 	width:0; */
+			height:0;
+		/* 	line-height: 16px; */
+			transition: all .5s;
+			overflow: hidden;
+			display: inline;
+		}
+		.el-radio-button{
+			.el-radio-button__inner{
+				padding:0;
+				margin-left:10px;
+				border-radius:unset;
+				border:none;
+				background-color: transparent;
+				color:#fff;
+			}
+	    }
+	}
+	.bc-menu-collapse{
+		&.bc-menu-title{
+			@include fj()
+			.bc-nav-title{
+				&.bc-nav-title-show{
+					height: 100%;
+					font-size: 12px;
+					width: auto;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+}
+/* 主体信息配置 */
+.bc-continer{
+    .el-header,.el-main{
+        padding:15px;
+    }
+    .el-header{
+        height:40px!important;
+        padding:0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .iconfont{
+            vertical-align: text-bottom;
+            margin-right: 5px;
+        }
+    }
+}
+/* 滚动条配置  高度根据需要设置 */
+.bc-scrollbar{
+    height: calc(100% - 36px);
+    .el-scrollbar__wrap{
+        overflow-y: scroll;
+        overflow-x:hidden;
+    }
+    .el-scrollbar__bar{
+        .el-scrollbar__thumb{
+            background-color: #3c8dbc;
+        }
+    }
+}
+/* form 表单*/
+.bc-form{
+    padding:10px;
+    .el-form-item__content{
+        line-height: 40px;
+    }
+    .el-input__inner{
+        height:40px;
+        line-height: 40px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    }
+    .bc-form-row{
+        display: block;
+        &.bc-toolbar{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .el-input--suffix{
+        width:calc(100% - 20px)
+    }
+    
+}
+.el-select-dropdown{
+    min-width: 200px!important;
+}
+.el-time-spinner{
+    width: 100%;
+    white-space: nowrap;
+}

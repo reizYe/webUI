@@ -1,0 +1,30 @@
+export const menuData = [
+  {
+    menuId: '1',
+    icon: 'el-icon-picture',
+    path: 'menu1',
+    menuName: '常见组件',
+    children:
+    [
+      {templatePath: '../template/page/index', menuId: '1-1', path: 'menu11', menuName: '表单', icon: 'el-icon-tickets'},
+      {templatePath: '../template/page/index', menuId: '1-2', path: 'menu12', menuName: '表单验证', icon: 'el-icon-tickets'},
+      {menuId: '1-3',
+        path: 'menu13',
+        menuName: '列表',
+        icon: 'el-icon-picture',
+        children:
+        [
+          {templatePath: '../template/page/index', menuId: '1-3-1', path: 'menu131', menuName: '普通列表', icon: 'el-icon-tickets'},
+          {templatePath: '../template/page/index', menuId: '1-3-2', path: 'menu132', menuName: '固定列的列表', icon: 'el-icon-tickets'},
+          {templatePath: '../template/page/index', menuId: '1-3-3', path: 'menu133', menuName: '菜单一三三', icon: 'el-icon-tickets'}
+        ]
+      },
+      {templatePath: '../template/page/index', menuId: '1-4', path: 'menu14', menuName: '菜单一四', icon: 'el-icon-tickets'},
+      {templatePath: '../template/page/index', menuId: '1-5', path: 'menu15', menuName: '菜单一五', icon: 'el-icon-tickets'}
+    ]
+  },
+  {templatePath: '../template/page/index', menuId: '2', path: 'menu2', menuName: '菜单二', icon: 'el-icon-tickets'},
+  {templatePath: '../template/page/index', menuId: '3', path: 'menu3', menuName: '菜单三', icon: 'el-icon-tickets'},
+  {templatePath: '../template/page/index', menuId: '4', path: 'menu4', menuName: '菜单四', icon: 'el-icon-tickets'},
+  {templatePath: '../template/page/index', menuId: '5', path: 'menu5', menuName: '菜单五', icon: 'el-icon-tickets'}
+]

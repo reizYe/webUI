@@ -1,0 +1,50 @@
+
+.bc-header {
+    /*background-color:#545c64;*/
+    background-color: #3c8dbc;
+	border-bottom-color: #fff;
+	.logo-continer{
+		color:#fff;
+	}
+	.user-basic{
+		color:#fff;
+		.user-info{
+		  /*color:#c0c0c0;*/
+		  color:#fff;
+		}
+	}
+	.user-msg{
+	  background: #fff;
+	  i{
+		color:#000;
+	  }
+	}
+}
+.user-op{
+	li{
+		background:#fff;
+	}
+	li:hover{
+		background:#00A6C0;
+	}
+}
+.bc-menu-continer{
+	background-color: #545c64;
+	.bc-menu-title{
+		background-color: #1a2226;
+		.bc-nav-title{
+			color:#4b646f;
+		}
+	}
+	.el-menu{
+		border-right-color: #545c64;
+		background-color: #545c64;
+		color: #fff;
+	}
+}
+/* 面包屑背景颜色 */
+.bc-continer{
+    .el-header.bc-Breadcrumb{
+        background-color:#ecf0f5;
+    }
+}

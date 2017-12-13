@@ -1,0 +1,21 @@
+import {getInfo} from '@/config/axios'
+const url = process.env.NODE_ENV === 'development' ? '' : ''
+
+/**
+ * 登录接口
+ * @param {}
+ */
+const login = (params) => getInfo(url + '/../login', params, 'post', false)
+/**
+ * 测试列表数据接口
+ */
+const getTableData = (params) => getInfo('/api/tableApi', params, 'post', false)
+/**
+ * 获取菜单接口
+ */
+const getMenuItem = (params) => getInfo('/api/getMenuList', params, 'post', false)
+export {
+  login,             // 登录
+  getTableData,
+  getMenuItem        // 获取菜单
+}

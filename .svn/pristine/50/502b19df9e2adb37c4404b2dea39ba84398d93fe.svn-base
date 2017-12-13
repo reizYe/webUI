@@ -1,0 +1,29 @@
+// nodejs require 根据模块路径导入 webpack需要预编译，无法在动态路径中找到模块 `${templatePath}` 不起作用
+export const generateComponentFunction = (path) => resolve => require([`@/template/page/${path}`], resolve)
+
+// const menu1 = generateComponentFunction('page/menu1')
+// const menu2 = generateComponentFunction('page/menu2')
+// const menu3 = generateComponentFunction('page/menu3')
+// const menu4 = generateComponentFunction('page/menu4')
+// const menu5 = generateComponentFunction('page/menu5')
+// const menu6 = generateComponentFunction('page/menu6')
+// const menu7 = generateComponentFunction('page/menu7')
+// const menu8 = generateComponentFunction('page/menu8')
+// const menu9 = generateComponentFunction('page/menu9')
+// const menu10 = generateComponentFunction('page/menu10')
+// const menu11 = generateComponentFunction('page/menu11')
+
+// /* 组件路由路径和组件的配对 */
+// export const compopent = {
+//   'menu11': menu1,
+//   'menu12': menu2,
+//   'menu131': menu3,
+//   'menu132': menu4,
+//   'menu133': menu5,
+//   'menu14': menu6,
+//   'menu15': menu7,
+//   'menu2': menu8,
+//   'menu3': menu9,
+//   'menu4': menu10,
+//   'menu5': menu11
+// }

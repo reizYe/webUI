@@ -1,0 +1,13 @@
+import {getInfo} from '@/config/axios'
+const url = process.env.NODE_ENV === 'development' ? '' : ''
+
+/**
+ * 登录接口
+ * @param {} 
+ */
+const login = (params) => getInfo(url+'/../login', params,'post',false);
+
+export {
+  login              //登录
+}
+

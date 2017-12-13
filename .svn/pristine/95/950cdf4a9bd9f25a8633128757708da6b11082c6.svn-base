@@ -1,0 +1,8 @@
+$commonColor:#fff;                /* 默认布局中颜色 */
+$backgroundHeader:#3c8dbc;        /* header背景颜色 */
+$userMsgIcon:#000;                /* header 中icon的颜色  */
+$menuHover:#00A6C0;               /* 菜单hover颜色  */
+$menuBackground:#545c64;          /* 菜单背景颜色 */
+$menuHeaderBackground:#1a2226;    /* 菜单标题导航颜色 */
+$menuHeaderFont:#4b646f;          /* 菜单标题文字颜色  */
+$breadcrumbBackground:#ecf0f5;    /* 面包屑背景颜色 */

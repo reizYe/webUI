@@ -1,0 +1,15 @@
+import {menuData} from '@/assets/json/menu'
+import * as api from '@/service/getData'
+// import * as util from '@/config/mUtils'
+import * as types from './mutation-types'
+export default {
+  getMenuItem: ({commit}, params) => {
+    commit(types.MENU_ITEM, menuData)
+    return menuData
+  },
+  getTableData: ({commit}, params) => {
+    return api['getTableData']().then((data) => {
+      return data
+    })
+  }
+}

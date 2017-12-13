@@ -1,0 +1,47 @@
+.bc-header {
+    background-color: $backgroundHeader;
+	border-bottom-color: $commonColor;
+	.logo-continer{
+		color:$commonColor;
+	}
+	.user-basic{
+		color:$commonColor;
+		.user-info{
+		  color:$commonColor;
+		}
+	}
+	.user-msg{
+	  background: $commonColor;
+	  i{
+		color:$userMsgIcon;
+	  }
+	}
+}
+.user-op{
+	li{
+		background:$commonColor;
+	}
+	li:hover{
+		background:$menuHover;
+	}
+}
+.bc-menu-continer{
+	background-color: $menuBackground;
+	.bc-menu-title{
+		background-color: $menuHeaderBackground;
+		.bc-nav-title{
+			color:$menuHeaderFont;
+		}
+	}
+	.el-menu{
+		border-right-color: $menuBackground;
+		background-color: $menuBackground;
+		color: $commonColor;
+	}
+}
+/* 面包屑背景颜色 */
+.bc-continer{
+    .el-header.bc-Breadcrumb{
+        background-color:$breadcrumbBackground
+    }
+}

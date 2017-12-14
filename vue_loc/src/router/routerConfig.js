@@ -2,9 +2,9 @@ const login = r => require.ensure([], () => r(require('@/components/login')), 'l
 const main = r => require.ensure([], () => r(require('@/template/main')), 'main') // 主体页面结构
 const index = r => require.ensure([], () => r(require('@/template/page/index')), 'index') // 首页
 
-const error404 = r => require.ensure([], () => r(require('@/template/page/404')), 'error404') // 404
-const error500 = r => require.ensure([], () => r(require('@/template/page/500')), 'error500') // 500
-const error502 = r => require.ensure([], () => r(require('@/template/page/502')), 'error502') // 502
+const error404 = r => require.ensure([], () => r(require('@/template/page/common/404')), 'error404') // 404
+const error500 = r => require.ensure([], () => r(require('@/template/page/common/500')), 'error500') // 500
+const error502 = r => require.ensure([], () => r(require('@/template/page/common/502')), 'error502') // 502
 /* 一级主要路由 */
 const mainRouter = [
   {path: '/', redirect: '/login'},

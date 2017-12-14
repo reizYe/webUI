@@ -1,5 +1,5 @@
 {
-  "tableData":[{
+  "tableData": [{
     "date": "2016-05-02",
     "name": "王小虎",
     "address": "上海市普陀区金沙江路 1518 弄"
@@ -16,47 +16,180 @@
     "name": "王小虎",
     "address": "上海市普陀区金沙江路 1516 弄"
   }],
-  "menuData":[{
-    "menuId": "1",
-    "icon": "",
-    "path": "menu1",
-    "menuName": "常见组件",
-    "children":[
-      {"menuId": "1-1", "path": "menu11", "menuName": "表单", "icon": "icon-createtask", "url": "menu1"},
-      {"menuId": "1-2", "path": "menu12", "menuName": "表单验证", "icon": "icon-createtask", "url": "menu2"},
-      {"menuId": "1-3",
-        "path": "menu13",
-        "menuName": "列表",
-        "icon": "",
-        "children":[
-          {"menuId": "1-3-1", "path": "menu131", "menuName": "普通列表", "icon": "icon-createtask", "url": "menu3"},
-          {"menuId": "1-3-2", "path": "menu132", "menuName": "固定列的列表", "icon": "icon-createtask", "url": "menu4"},
-          {"menuId": "1-3-3", "path": "menu133", "menuName": "菜单一三三", "icon": "icon-createtask", "url": "menu5"}
-        ]
-      },
-      {"menuId": "1-4", "path": "menu14", "menuName": "菜单一三四", "icon": "icon-createtask", "url": "menu6"},
-      {"menuId": "1-5", "path": "menu15", "menuName": "菜单一五", "icon": "icon-createtask", "url": "menu7"}
-    ]
-  },
-  {"menuId": "2",
-    "path": "menu2",
-    "menuName": "系统管理",
-    "icon": "icon-setup",
-    "children":[
-      {"menuId": "3", "path": "menu3", "menuName": "菜单管理", "icon": "icon-createtask", "url": "menu8"},
-      {"menuId": "4", "path": "menu4", "menuName": "账号管理", "icon": "icon-createtask", "url": "menu9"},
-      {"menuId": "5", "path": "menu5", "menuName": "角色管理", "icon": "icon-createtask", "url": "menu10"}
-    ]
-  },
-  {"menuId": "6",
-   "path": "menu6",
-   "menuName": "系统管理6",
-   "icon": "icon-setup",
-   "children":[
-      {"menuId": "7", "path": "menu7", "menuName": "菜单管理", "icon": "icon-createtask", "url": "menu11"},
-      {"menuId": "8", "path": "menu8", "menuName": "账号管理", "icon": "icon-createtask", "url": "menu11"},
-      {"menuId": "9", "path": "menu9", "menuName": "角色管理", "icon": "icon-createtask", "url": "menu11"}
-    ]
-  }
- ]
+  "menuData": [{
+      "menuId": "1",
+      "icon": "icon-homepage",
+      "path": "DSP",
+      "menuName": "DSP",
+      "children": [{
+          "menuId": "1-1",
+          "path": "my-extend",
+          "menuName": "我的推广",
+          "icon": "icon-activity",
+          "url": "DSP/my-extend"
+        },
+        {
+          "menuId": "1-2",
+          "path": "ad-report",
+          "menuName": "广告报表",
+          "icon": "icon-document",
+          "url": "DSP/ad-report"
+        },
+        {
+          "menuId": "1-3",
+          "path": "operation-report",
+          "menuName": "运维报表",
+          "icon": "icon-order",
+          "children": [{
+              "menuId": "1-3-1",
+              "path": "menu131",
+              "menuName": "test",
+              "icon": "icon-other",
+              "url": "DSP/ad-report"
+            },
+            {
+              "menuId": "1-3-2",
+              "path": "menu132",
+              "menuName": "test",
+              "icon": "icon-createtask",
+              "url": "DSP/my-extend"
+            },
+            {
+              "menuId": "1-3-3",
+              "path": "menu133",
+              "menuName": "test",
+              "icon": "icon-createtask",
+              "url": "DSP/my-extend"
+            }
+          ]
+        },
+        {
+          "menuId": "1-4",
+          "path": "op-log",
+          "menuName": "操作日志",
+          "icon": "icon-order",
+          "url": "DSP/op-log"
+        }
+      ]
+    },
+    {
+      "menuId": "2",
+      "path": "authority",
+      "menuName": "审核",
+      "icon": "icon-brush",
+      "children": [{
+          "menuId": "2-1",
+          "path": "ad-plan",
+          "menuName": "广告计划审核",
+          "icon": "icon-workbench",
+          "url": "examine/ad-plan"
+        },
+        {
+          "menuId": "2-2",
+          "path": "ad-source",
+          "menuName": "广告素材审核",
+          "icon": "icon-lock",
+          "url": "examine/ad-source"
+        },
+        {
+          "menuId": "2-3",
+          "path": "examine-log",
+          "menuName": "审核日志",
+          "icon": "icon-offline",
+          "url": "examine/examine-log"
+        }
+      ]
+    },
+    {
+      "menuId": "3",
+      "path": "finance",
+      "menuName": "财务",
+      "icon": "icon-transaction_fill",
+      "children": [{
+          "menuId": "3-1",
+          "path": "finance-account",
+          "menuName": "账户",
+          "icon": "icon-businesscard",
+          "url": "finance/finance-account"
+        },
+        {
+          "menuId": "3-2",
+          "path": "finance-balance",
+          "menuName": "结算",
+          "icon": "icon-headlines",
+          "url": "finance/finance-balance"
+        }
+      ]
+    },
+    {
+      "menuId": "4",
+      "path": "pushmanage",
+      "menuName": "推送管理",
+      "icon": "icon-tasklist",
+      "children": [{
+          "menuId": "4-1",
+          "path": "push-config",
+          "menuName": "推送配置",
+          "icon": "icon-createtask",
+          "url": "pushmanage/push-config"
+        },
+        {
+          "menuId": "4-2",
+          "path": "tag-manage",
+          "menuName": "标签管理",
+          "icon": "icon-createtask",
+          "url": "pushmanage/tag-manage"
+        },
+        {
+          "menuId": "4-3",
+          "path": "selftag-manage",
+          "menuName": "自定义标签管理",
+          "icon": "icon-createtask",
+          "url": "pushmanage/selftag-manage"
+        }
+      ]
+    },
+    {
+      "menuId": "5",
+      "path": "system",
+      "menuName": "系统",
+      "icon": "icon-setup",
+      "children": [{
+          "menuId": "5-1",
+          "path": "UCenter",
+          "menuName": "UCenter",
+          "icon": "icon-group",
+          "url": "system/UCenter"
+        },
+        {
+          "menuId": "5-2",
+          "path": "user-center",
+          "menuName": "用户中心",
+          "icon": "icon-addressbook",
+          "url": "system/user-center"
+        },
+        {
+          "menuId": "5-3",
+          "path": "com-manage",
+          "menuName": "公司管理",
+          "icon": "icon-message",
+          "url": "system/com-manage"
+        },
+        {
+          "menuId": "5-4",
+          "path": "authority-manage",
+          "menuName": "权限管理",
+          "icon": "icon-lock",
+          "url": "system/authority-manage"
+        },
+        {
+          "menuId": "5-5",
+          "path": "usergroup-manage",
+          "menuName": "用户组管理",
+          "icon": "icon-people",
+          "url": "system/usergroup-manage"
+        }
+      ]
+    }
+  ]
 }

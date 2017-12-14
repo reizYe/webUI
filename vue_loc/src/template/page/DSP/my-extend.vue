@@ -71,7 +71,7 @@
 			<!--  form查询方式三  -->
    			<el-card class="box-card" header="第三种方式" style="margin-top:15px;">
 		   		<el-form ref="form" :model="form" label-width="80px">
-						 <input type="text" v-model="aa">
+						 <input type="text">
 				  <el-form-item label="活动名称">
 				    <el-input v-model="form.name"></el-input>
 				  </el-form-item>
@@ -111,8 +111,8 @@
 				    <el-input type="textarea"  v-model="form.desc"></el-input>
 				  </el-form-item>
 				  <el-form-item>
-				    <el-button type="primary" @click="onSubmit">立即创建</el-button>
-				    <el-button  @click="onCancel" >取消</el-button>
+				    <!-- <el-button type="primary" @click="onSubmit">立即创建</el-button> -->
+				    <!-- <el-button  @click="onCancel" >取消</el-button> -->
 				  </el-form-item>
 				</el-form>
 			</el-card>
@@ -149,17 +149,14 @@
     },
     methods: {
       onSubmit: function () {
-				this.aa=3;
-				console.log(this.aa);
-				console.log('点击了提交')
+				// this.aa=3;
+				// console.log(this.aa);
+				// console.log('点击了提交')
 				
       },
       resetForm: function (formName) {
         this.$refs[formName].resetFields()
 			},
-			onCancel () {
-					console.log(this.aa);
-			}
 			
     }
   }

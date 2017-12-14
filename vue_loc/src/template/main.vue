@@ -48,7 +48,7 @@
       <!-- 菜单 -->
       <div class="bc-menu-continer margin-sm-and-left" :class="{'bc-menu-continer-uncollapse':isCollapse,'show-sm-and-down':isMobile}">
         <el-radio-group class="bc-menu-title hidden-sm-and-down" v-model="isCollapse" :class="{'bc-menu-collapse':!isCollapse}">
-          <span class="bc-nav-title" :class="{'bc-nav-title-show':!collapseNav&&navShow}">导航信息</span>
+          <span class="bc-nav-title" :class="{'bc-nav-title-show':!collapseNav&&navShow}"></span>
           <el-radio-button :label="!isCollapse">
             <i class="el-icon-menu"></i>
           </el-radio-button>
@@ -83,7 +83,7 @@ export default {
       userName: "demo",
       isCollapse: false,
       navShow: false,
-      isMobile: true,
+      isMobile: false,
       menuData: this.$store.getters.menuItem
     };
   },
